@@ -1,0 +1,225 @@
+body {
+  background-color: #ffffff;
+}
+
+nav {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+nav .menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+}
+/* header-------------------------------- */
+
+.profile-details {
+  /* max-width: 900px; */
+  margin: 20px auto;
+  background-color: #eeedeb;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.profile-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 24px;
+  display: inline-block;
+}
+
+.profile-info .status {
+  color: green;
+  font-weight: bold;
+  font-size: 10px;
+  background-color: rgb(211, 225, 211);
+  font-family: sans-serif;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.profile-info .position,
+.profile-info .department {
+  margin-top: 5px;
+  color: #666;
+}
+.profile-info .position i,
+.profile-info .department i {
+  margin-right: 5px;
+}
+
+.edit-profile {
+  color: #6d31ed;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.edit-profile:hover {
+  background-color: #5631ed;
+  color: white;
+}
+
+/* Personal Information- ----------------------------------------------- */
+
+.general-information,
+.job-information {
+  margin-top: 20px;
+}
+.general-information h2,
+.job-information h2 {
+  color: #8353e2;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #eeedeb;
+  font-family: Epilogue;
+  font-size: 23px;
+}
+
+h3 {
+  color: red;
+}
+
+table {
+  background-color: #eeedeb;
+}
+.info-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.info-section th {
+  font-family: Manrope;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #bcc1caff;
+}
+
+.info-section td {
+  font-family: Manrope;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #171a1fff;
+}
+
+.info-section th,
+.info-section td {
+  text-align: left;
+}
+
+/* Education ------------------------------------------------ */
+.education {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
+}
+.education div {
+  flex: 1;
+  padding: 10px;
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+.education span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.education a {
+  text-decoration: none;
+  color: #379ae6ff;
+  background: #f1f8fdff;
+}
+
+.education p {
+  margin: 5px 0;
+}
+
+/* job----------------------------------------- */
+.job-information .item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #eeedeb;
+}
+.job-information .item div {
+  flex: 1;
+}
+.job-information .item p {
+  margin: 5px 0;
+}
+@media only screen and (max-width: 450px) {
+  .education {
+    display: flex;
+    /* gap: 20px; */
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  .education div {
+    flex: 1;
+    padding: 10px;
+    background-color: #eeedeb;
+    border-radius: 8px;
+    border: 1px black solid;
+  }
+
+  .job-information .item {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* gap: 20px; */
+    background-color: #eeedeb;
+    flex-direction: column;
+  }
+
+  .job-information .item p {
+    margin: 3px;
+  }
+
+  .profile-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+  }
+  .profile-details {
+    width: 90%;
+    border: 1px solid;
+  }
+}
